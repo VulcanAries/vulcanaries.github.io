@@ -1,0 +1,142 @@
+/* banner images */
+.banner {
+    background-image: url('/assets/images/top.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 124px;
+    width: 100%;
+}
+.left {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 260px;
+}
+.left img {
+    position: absolute;
+}
+.right {
+    right: 0;
+    padding: 0;
+    float: right;
+    height: 100%;
+    width: 260px;
+}
+.right img {
+    position: absolute;
+}
+
+/* navigation */
+.nav {
+    float: none;
+    font-size: 24pt;
+    padding-top: 20px;
+    text-align: center;
+}
+.nav a {
+    color: lightgray;
+    padding: 16px;
+    text-decoration: none;
+}
+.nav a:hover {
+    /* color: #f6b657; */
+    color: yellow
+}
+
+/* podcast links (home page footer) */
+.podlinks {
+    padding: 1.5rem;
+    justify-content: center;
+    align-items:  center;
+    margin: auto;
+    max-width: 960px;
+}
+.podlinks table {
+    width: 100%;
+    border: none;
+}
+.podlinks td {
+    text-align: center;
+    border: none;
+}
+.podlinks img {
+    padding-left: 3%;
+    padding-right: 3%;
+}
+
+/* content */
+.content {
+    flex-grow: 1;
+    padding: 2rem;
+    margin: auto;
+    max-width: 960px;
+}
+
+body {
+    background-color: #130902;
+    color: #f6b657;
+    display: flex;
+    flex-direction: column;
+    font-family: "Courier New", consolas, monospace;
+    min-height: 98vh;
+}
+
+a {
+    color: lightgray;
+}
+
+a:hover {
+    color: yellow
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: lightgray;
+}
+
+/* hide left & right banners */
+@media screen and (max-width: 1480px) {
+    .left {
+        display: none;
+        visibility: hidden;
+    }
+    .right {
+        display: none;
+        visibility: hidden;
+    }
+}
+
+/* mobile */
+@media screen and (max-width: 700px) {
+    .nav {
+        font-size: 16pt;
+    }
+    .banner {
+        height: 80px;
+    }
+    .left {
+        display: none;
+        visibility: hidden;
+    }
+    .right {
+        display: none;
+        visibility: hidden;
+    }
+    .content {
+        padding: 0;
+    }
+}
+
+/* small screen */
+@media screen and (max-width: 400px) {
+    .nav a {
+        display: block;
+        padding-top: 0;
+    }
+    .banner {
+        height: 70px;
+    }
+    .content {
+        padding: 0;
+    }
+}
